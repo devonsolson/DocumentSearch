@@ -13,15 +13,15 @@ class indexedSearch {
         Map<String, Integer> map = new HashMap<>();
         String[] words = wordsList.split(" ");
  
-        for (String word : words) {
+        for (String value : words) {
 
-            Integer intCount = map.get(word);
+            Integer intCount = map.get(value);
  
             if (intCount == null)
-            map.put(word, 1);
+            map.put(value, 1);
  
             else {
-                map.put(word, intCount + 1);
+                map.put(value, intCount + 1);
             }
         }
         int value = map.get(term);
