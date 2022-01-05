@@ -20,9 +20,6 @@ public class regexSearch {
             while(mmatchingList.find()){
             count++;
         }
-
-            System.out.println(count);
-
             fileCount[i] = count;
             }
         
